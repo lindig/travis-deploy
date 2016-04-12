@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/lindig/travis-deploy.svg?branch=master)](https://travis-ci.org/lindig/travis-deploy)
 
 # Travis Deploy Test
 
