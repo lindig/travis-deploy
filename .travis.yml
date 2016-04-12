@@ -1,3 +1,4 @@
+# vim:ft=yaml ts=2 shiftwidth=2:
 os:
 - linux
 sudo: required
@@ -11,6 +12,10 @@ deploy:
   provider: releases
   api_key:
     secure: Pcu0ac3EP48OmqxhfzznmrEiwmUWxA3U+FyJ7GLzSye71gjShoG6z5WsJtdPw0emRnPQ7UWWu5Goq7VMhtBn65QHfKNZWBUSZxFLkf4I5EhWw/MvZZI11699J7BdD0maeQPbym0ezD+lsIB1J46F0biMYiJmNSL1O7Nq6aietO5LmZOXDcdmRTnHgRAnCv/4UhvOcrvrbeEkjiNQ3ToJomFFGhrhKzorx8YtV9c3GowCctkYv2tmYvfNmAJ/UjTEkpShGpv8Ol6MzM0x/H4t6b4WvwIF39tv1iVEkEZHviwV+oyUgQi3hT4ah+5kn1KLYpspOjyJUt50nSrwXbPkwdO/Dkb+FDZut4mz8a99uEgwnSdcuckmrRwO8suefjwrNtPHWW9aEVU9F0kqLwWGY9cKGLksKkB5aY/47LiFXxnyaJeeSPb0DFYUTX66JbdhqD4rft89uvo6Q/TdTrvgmhw9bcPAOxPyu+TffApPr/agzvE5IYFt6RElmVzSFDBh+meVyMsXII7Pq9lkyYbyLMNnpIia+ar2rkMqeja+z+L3CTmIw25wsRkwSUlcxoRsZooc8lqoxRkBpYdKI6XLxGIEsZKD3GF+IQykHq96uVDEAylmYjTV/qGAAhOFgLGwIV9AZZlj5Xt1CKt1CicfCMPlXZE8tXOK7iFYigRKpHQ=
-  file: README.md
+  file: 
+    - README.md
+    - src/demo.txt  
   on:
     repo: lindig/travis-deploy
+    tags: true
+  skip_cleanup: true
